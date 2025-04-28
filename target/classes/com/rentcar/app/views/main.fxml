@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="mainPane" prefHeight="600.0" prefWidth="900.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentcar.app.controllers.MainController">
+   <left>
+      <VBox fx:id="menuPane" alignment="TOP_CENTER" prefHeight="600.0" prefWidth="200.0" styleClass="menu-pane" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="title-label" text="Gestion des Locations">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="userLabel" styleClass="menu-info-label" text="Utilisateur: admin&#10;Rôle: Admin">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="clientsButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClientsAction" styleClass="menu-button" text="Clients">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="voituresButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleVoituresAction" styleClass="menu-button" text="Voitures">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="contratsButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleContratsAction" styleClass="menu-button" text="Contrats">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="paiementsButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handlePaiementsAction" styleClass="menu-button" text="Paiements">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </Button>
+            <Region VBox.vgrow="ALWAYS" />
+            <Button fx:id="logoutButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleLogoutAction" styleClass="logout-button" text="Déconnexion">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <!-- Le contenu sera chargé dynamiquement ici -->
+      <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="content-pane">
+         <children>
+            <Label text="Bienvenue dans l'application de gestion des locations de voitures">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>
