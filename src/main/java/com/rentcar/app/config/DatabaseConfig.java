@@ -18,7 +18,7 @@ public class DatabaseConfig {
 
     // Identifiants de connexion - MODIFIER CES VALEURS SELON VOTRE CONFIGURATION
     private static final String DB_USER = "root";      // Nom d'utilisateur MySQL
-    private static final String DB_PASSWORD = "";      // Mot de passe MySQL
+    private static final String DB_PASSWORD = "@Admin2003";      // Mot de passe MySQL
 
     // URL de connexion à la base de données (construite à partir des paramètres ci-dessus)
     private static final String DB_URL = "jdbc:mysql://" + DB_HOST + ":" + DB_PORT + "/" + DB_NAME + "?serverTimezone=UTC";
